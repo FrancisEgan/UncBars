@@ -1,0 +1,10 @@
+## Interface: 16001
+## Title: UncBars
+## Author: Unc
+## Version: 1.0.0
+## Notes: Configurable health and resource bars, druid energy, combo points, and native predictions for WoW: Forever.
+## SavedVariablesPerCharacter: UncBarsDB
+
+Logic.lua
+UncBars.lua
+Options.lua
