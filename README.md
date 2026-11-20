@@ -221,6 +221,22 @@ Enable **UncBars** in the character-selection AddOns list, then log in or reload
 the UI. If a running client does not discover the new folder, restart it.
 The OctoWoW addon and its saved settings are untouched.
 
+## Release packaging
+
+From a Bash terminal in the repository directory, run:
+
+```bash
+./make
+```
+
+This creates `dist/UncBars 1.0.0.zip`, using the `## Version` in `UncBars.toc`
+for the filename. Upload this ZIP to CurseForge. It contains only the `UncBars/`
+folder with the TOC and the files listed in it (currently `Logic.lua`,
+`UncBars.lua`, and `Options.lua`). Tests, documentation, Git files, the packaging
+script, and previous archives are excluded. Re-running replaces the ZIP for that
+version. Requires Git Bash on Windows; the launcher handles PowerShell for you.
+It also works from another directory when given its full path.
+
 ## Verification
 
 From `tests`, run `npm install` and `npm test` for Lua 5.1 syntax and a mocked
